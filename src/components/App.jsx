@@ -1,12 +1,14 @@
 import React from 'react';
-import { Home } from './home/Home';
 import './utils/Waves.css';
+import { Home } from './home/Home';
+import ThemeSwitch from './theme/ThemeSwitcher';
 import { Container, ContentWrapper } from './style';
 export const App = () => {
   return (
     <>
       <Container green="2">
         <ContentWrapper>
+          <ThemeSwitch Theme/>
           <Home />
         </ContentWrapper>
         {/* <!--Waves Container--> */}
